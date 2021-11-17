@@ -167,8 +167,8 @@ with torch.no_grad():
 
         total_actual_labels = total_actual_labels + labels 
         total_predicted_labels = total_predicted_labels + predicted_label
-
-        break
+        
+        ##Modified - acen20
 
     if output_report == "performance_report":
         f_score, recall_, precision_, acc, specificity_,PFN,PFP,PTN,PTP= performance_report(total_actual_labels, total_predicted_labels)
